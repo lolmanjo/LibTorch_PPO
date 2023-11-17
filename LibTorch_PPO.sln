@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibTorch_PPO", "LibTorch_PPO.vcxproj", "{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		DebugCUDA|x64 = DebugCUDA|x64
+		Release|x64 = Release|x64
+		ReleaseCUDA|x64 = ReleaseCUDA|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.Debug|x64.ActiveCfg = Debug|x64
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.Debug|x64.Build.0 = Debug|x64
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.DebugCUDA|x64.ActiveCfg = DebugCUDA|x64
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.DebugCUDA|x64.Build.0 = DebugCUDA|x64
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.Release|x64.ActiveCfg = Release|x64
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.Release|x64.Build.0 = Release|x64
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.ReleaseCUDA|x64.ActiveCfg = ReleaseCUDA|x64
+		{84D70843-204F-4612-AEC0-BD2DA9A4EDB9}.ReleaseCUDA|x64.Build.0 = ReleaseCUDA|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {693BA45B-D179-449F-A2C6-CFD68413F270}
+	EndGlobalSection
+EndGlobal

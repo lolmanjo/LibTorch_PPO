@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "checkpointDirectoryName": "checkpoints",
+    "modelNameLoad": "AC-openAi5-v1",
+    "modelNameSave": "AC-openAi5-v1",
+    "learningRate": 0.01,
+    "policyStepLength": 1,
+    "trainingStepLength": 20,
+    "maxEpisodeLength": 120000,
+    "episodesPerAgentSwap": -1,
+    "episodesPerCheckpoint": -1,
+    "maxEpisodes": 1000,
+    "continueLogFile": true,
+    "enableBackup": false,
+    "ppo_gamma": 0.99,
+    "ppo_lambda": 0.95,
+    "ppo_epochs": 5
+  }
+}
