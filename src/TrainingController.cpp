@@ -370,14 +370,14 @@ void TrainingController::onAgentExecuted(AGENT_ID agentID) {
 	if(agent->totalReward != 0.0) {
 
 #ifdef _DEBUG
-		//float f_1 = agent->model->get()->a_lin1_->weight[0][0].item().toFloat();
+		//float f_1 = agent->model->get()->actor_0->weight[0][0].item().toFloat();
 
-		uint32_t tmpSize = static_cast<uint32_t>(agent->model->get()->a_lin1_->weight.size(1));
+		uint32_t tmpSize = static_cast<uint32_t>(agent->model->get()->actor_0->weight.size(1));
 
 		std::vector<float> befores = std::vector<float>();
 		befores.reserve(tmpSize);
 		for(uint32_t i = 0; i < tmpSize; i++) {
-			befores.push_back(agent->model->get()->a_lin1_->weight[0][i].item().toFloat());
+			befores.push_back(agent->model->get()->actor_0->weight[0][i].item().toFloat());
 		}
 #endif
 
@@ -385,12 +385,12 @@ void TrainingController::onAgentExecuted(AGENT_ID agentID) {
 		optimizePPO(agent);
 
 #ifdef _DEBUG
-		//float f_2 = agent->model->get()->a_lin1_->weight[0][0].item().toFloat();
+		//float f_2 = agent->model->get()->actor_0->weight[0][0].item().toFloat();
 
 		std::vector<float> afters = std::vector<float>();
 		afters.reserve(tmpSize);
 		for(uint32_t i = 0; i < tmpSize; i++) {
-			afters.push_back(agent->model->get()->a_lin1_->weight[0][i].item().toFloat());
+			afters.push_back(agent->model->get()->actor_0->weight[0][i].item().toFloat());
 		}
 
 		std::vector<float> differences = std::vector<float>();

@@ -51,7 +51,8 @@ StateData* TrainingEncoder::buildInputTensor(AGENT_ID agentID, Environment* envi
 #ifdef USE_CUDA
     // Copy tensor to GPU. 
     stateData->inputTensorDevice = stateData->inputTensor.to(torch::kCUDA);
-    ////
+#else
+    stateData->inputTensorDevice = stateData->inputTensor.to(torch::kCPU);
 #endif
     
     return stateData;

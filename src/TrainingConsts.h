@@ -10,9 +10,9 @@
 #include <torch/torch.h>
 #pragma warning(pop)
 
-#undef _DEBUG
+#undef _DEBUG	// PyTorch headers seem to define _DEBUG even in release configuration. 
 
-#ifdef _DEBUG_
+#ifdef _DEBUG_	// Use custom _DEBUG_ to define _DEBUG if actually intended. 
 #define _DEBUG
 #endif
 
