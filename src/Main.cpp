@@ -42,13 +42,15 @@ int main(int argc, const char** argv) {
 			output.clear();
 			actionTaken = TrainingController::onActionRequired(agentID, output);
 
-			action = TrainingEncoder::decodeAction(agentID, output[0]);
-			
-			// Execute action. 
-			enviroment->onAction(agentID, action);
+			if(actionTaken) {
+				action = TrainingEncoder::decodeAction(agentID, output[0]);
 
-			// Reward agent. 
-			TrainingController::onAgentExecuted(agentID);
+				// Execute action. 
+				enviroment->onAction(agentID, action);
+
+				// Reward agent. 
+				TrainingController::onAgentExecuted(agentID);
+			}
 		}
 
 		// Finish tick. 
