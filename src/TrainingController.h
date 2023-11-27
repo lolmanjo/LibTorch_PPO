@@ -7,10 +7,10 @@
 namespace PLANS {
 
 	// Determine which model to use. 
-	//using Model = ActorCritic;
-	//using ModelImpl = ActorCriticImpl;
-	using Model = ActorCriticOpenAIFive;
-	using ModelImpl = ActorCriticOpenAIFiveImpl;
+	using Model = ActorCritic;
+	using ModelImpl = ActorCriticImpl;
+	//using Model = ActorCriticOpenAIFive;
+	//using ModelImpl = ActorCriticOpenAIFiveImpl;
 
 	// Determine which optimizer to use. 
 	using Optimizer = torch::optim::Adam;
